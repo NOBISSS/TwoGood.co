@@ -84,7 +84,8 @@ body {
 }
 
 #page1 {
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  min-height: 70vh;
   position: relative;
   width: 100%;
   padding: 0 1vw;
@@ -178,21 +179,49 @@ body {
 
 @media (max-width: 600px) {
   #page1 {
-    min-height: 70vh;
-    height: 100%;
-    width: 100%;
+    height: 50%;
+    width: 100%; 
+
   }
   #video-container {
     height: 30vh;
-    /* background-color: grey; */
+    background-color: grey;
     margin-top: 1vw;
     position: relative;
+  }
+
+  #page1 h1{
+    font-size: 12vw;
+    letter-spacing: 0.5px;
+    line-height: 45px;
+    margin-left: 2px;
+  }
+
+  #nav #nav-part1 svg{  
+    width: 80;
+  }
+
+  #nav #nav-part2{
+    width: 70%;
+  }
+
+  #nav-part2 #icons{
+    position: absolute;
+    right: 0;
+    width: 30.5%; 
+  }
+
+  #nav-part2 #icons i{
+    font-size: 4vw;
+    letter-spacing: -5px;
+    margin-right: 3px;
   }
   #page2 {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
+    /* background: red; */
   }
   #page2 .elem {
     padding-top: 1%;
@@ -202,9 +231,33 @@ body {
     padding-right: 3vw;
     padding-bottom: 2vw;
   }
-}
+
 #page2 .elem img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+#page3 #elem{
+  width: 100%;
+  height: 50%;
+  /* flex-wrap: wrap; */
+}
+
+#page3 #elem img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+}
+
+#page3 {
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  align-items: center;
+    justify-content: space-evenly;
+  /* flex-wrap: wrap; */
+  position: relative;
+}
+
 }
